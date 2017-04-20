@@ -1,0 +1,28 @@
+html{
+text-align: center
+
+}
+body {
+    background-color: lightslategray;
+}
+
+h1 {
+    color: silver;
+    text-align: center;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+#button {
+    height: 45;
+    width: 50;
+    border-color: whitesmoke;
+    color: black;
+
+}
+#num {
+    text-align: center;
+
+}
