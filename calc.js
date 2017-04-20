@@ -4,7 +4,6 @@
 6. Challenge: Add trig functions (in radian AND degree mode) 7. Extra Challenge: Add mc, m+, m-, mr butons that work!
 8. Super Challenge: Add ( and ) buttons that work! 9. Super Duper Challenge: Add exponents (negatives too!)
 */
-var mode = "Rad";
 var currentInput = "0";
 var memory = "0";
 var operator = 0;
@@ -136,31 +135,4 @@ function squareRoot() {
 function inverse() {
     currentInput = 1 / currentInput
     displayCurrentInput();
-}
-
-function trig(sign) {
-    if (mode == "Deg") {
-        currentInput = (Math.PI / 180) * currentInput;
-    }
-    if (sign == "sin") {
-        currentInput = Math.sin(currentInput);
-    }
-    else if (sign == "cos") {
-        currentInput = Math.cos(currentInput);
-    }
-    else if (sign == "tan") {
-        currentInput = Math.tan(currentInput);
-    }
-    displayCurrentInput();
-}
-
-function toggle(button) {
-    if (document.getElementById("1").value == "Rad") {
-        document.getElementById("1").value = "Deg";
-        mode = "Deg"
-    }
-    else if (document.getElementById("1").value == "Deg") {
-        document.getElementById("1").value = "Rad";
-        mode = "Rad"
-    }
 }
