@@ -1,28 +1,49 @@
-html{
-text-align: center
-
-}
-body {
-    background-color: lightslategray;
-}
-
-h1 {
-    color: silver;
-    text-align: center;
-}
-
-p {
+.bluebutton{
+    background-color: salmon;
+    width: 60px;
+    height: 40px;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 30px;
 }
-#button {
-    height: 45;
-    width: 50;
-    border-color: whitesmoke;
-    color: black;
+
+
+
+#screen{
+    color:black;
+}
+
+h1{
+   text-align: center;
 
 }
-#num {
-    text-align: center;
 
+p{
+    font-family: sans-serif;
+    font size: 20px
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #3e8e41;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+html{
+    text-align: center
 }

@@ -6,11 +6,10 @@
     <script src="calc.js">
     </script>
     <link rel="stylesheet" href="calc.css"> </head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    </head>
+</head>
 
 <body>
-    <h1>Calculator</h1>
+    <h1>Base Calculator</h1>
     <form>
         <p>
             <div class="container">
@@ -19,63 +18,63 @@
         <div class="container">
             <div class="row">
                 <div class="btn-group">
-                    <button type="button" class="btn btn-primary" onclick="addDigit('a')">A</button>
-                    <button type="button" class="btn btn-primary" onclick="addDigit('b')">B</button>
-                    <button type="button" class="btn btn-primary" onclick="addDigit('c')">C</button>
-                    <button type="button" class="btn btn-primary" onclick="allClear()">AC</button>
+                    <button type="button" class="button" onclick="addDigit('a')">A</button>
+                    <button type="button" class="button" onclick="addDigit('b')">B</button>
+                    <button type="button" class="button" onclick="addDigit('c')">C</button>
+                    <button type="button" class="button" onclick="allClear()">AC</button>
                 </div>
             </div>
             </p>
             <p>
                 <div class="row">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addDigit('d')">D</button>
-                        <button type="button" class="btn btn-primary" onclick="addDigit('e')">E</button>
-                        <button type="button" class="btn btn-primary" onclick="addDigit('f')">F</button>
-                        <button type="button" class="btn btn-primary" onclick="clearcurrent()">C</button>
+                        <button type="button" class="button" onclick="addDigit('d')">D</button>
+                        <button type="button" class="button" onclick="addDigit('e')">E</button>
+                        <button type="button" class="button" onclick="addDigit('f')">F</button>
+                        <button type="button" class="button" onclick="clearcurrent()">C</button>
                     </div>
                 </div>
             </p>
             <p>
                 <div class="row">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addDigit('7')">7</button>
-                        <button type="button" class="btn btn-primary" onclick="addDigit('8')">8</button>
-                        <button type="button" class="btn btn-primary" onclick="addDigit('9')">9</button>
+                        <button type="button" class="button" onclick="addDigit('7')">7</button>
+                        <button type="button" class="button" onclick="addDigit('8')">8</button>
+                        <button type="button" class="button" onclick="addDigit('9')">9</button>
                     </div>
-                    <button type="button" class="btn btn-primary" onclick="storeOperator('*')">*</button>
-                    <button type="button" class="btn btn-primary" onclick="inverse()">1/x</button>
+                    <button type="button" class="button" onclick="storeOperator('*')">*</button>
+                    <button type="button" class="button" onclick="inverse()">1/x</button>
                 </div>
             </p>
             <p>
                 <div class="row">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addDigit('4')">4</button>
-                        <button type="button" class="btn btn-primary" onclick="addDigit('5')">5</button>
-                        <button type="button" class="btn btn-primary" onclick="addDigit('6')">6</button>
+                        <button type="button" class="button" onclick="addDigit('4')">4</button>
+                        <button type="button" class="button" onclick="addDigit('5')">5</button>
+                        <button type="button" class="button" class="button" class="bluebutton" onclick="addDigit('6')">6</button>
                     </div>
-                    <button type="button" class="btn btn-primary" onclick="storeOperator('-')">-</button>
-                    <button type="button" class="btn btn-primary" onclick="square()">x<sup>2</sup></button>
+                    <button type="button" class="button" class="button" onclick="storeOperator('-')">-</button>
+                    <button type="button" class="button" onclick="square()">x<sup>2</sup></button>
                 </div>
             </p>
             <p>
                 <div class="row">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addDigit('1')">1</button>
-                        <button type="button" class="btn btn-primary" onclick="addDigit('2')">2</button>
-                        <button type="button" class="btn btn-primary" onclick="addDigit('3')">3</button>
+                        <button type="button" class="button" onclick="addDigit('1')">1</button>
+                        <button type="button" class="button" onclick="addDigit('2')">2</button>
+                        <button type="button" class="button" onclick="addDigit('3')">3</button>
                     </div>
-                    <button type="button" class="btn btn-primary" onclick="storeOperator('+')">+</button>
-                    <button type="button" class="btn btn-primary" onclick="percentage()">%</button>
+                    <button type="button" class="button" onclick="storeOperator('+')">+</button>
+                    <button type="button" class="button" onclick="percentage()">%</button>
             </p>
             <p>
                 <div class="btn-group">
-                    <button type="button" class="btn btn-primary" onclick="addDecimal()">.</button>
-                    <button type="button" class="btn btn-primary" onclick="addDigit('0')">0</button>
-                    <button type="button" class="btn btn-success" onclick="calculate()">=</button>
+                    <button type="button" class="button" onclick="addDecimal()">.</button>
+                    <button type="button" class="button" onclick="addDigit('0')">0</button>
+                    <button type="button" class="button" onclick="calculate()">=</button>
                 </div>
-                <button type="button" class="btn btn-primary" onclick="storeOperator('/')">/</button>
-                <button type="button" class="btn btn-primary" onclick="squareRoot()">&radic;x</button>
+                <button type="button" class="button" onclick="storeOperator('/')">/</button>
+                <button type="button" class="button" onclick="squareRoot()">&radic;x</button>
             </p>
     </form>
 </body>
