@@ -17,18 +17,12 @@
         </p>
         <div class="container">
             <div class="row">
-                <div class="btn-group">
-                    <button type="button" class="button" onclick="allClear()">AC</button>
-
+                <div class="dropdown">
+                        <button type="button" class="button" onclick="allClear()">AC</button>
+                    <button type="button" class="button" onclick="clearcurrent()">C</button>
+                    </br>
                 </div>
             </div>
-            </p>
-            <p>
-                <div class="row">
-                    <div class="btn-group">
-                        <button type="button" class="button" onclick="clearcurrent()">C</button>
-                    </div>
-                </div>
             </p>
             <p>
                 <div class="row">
@@ -39,6 +33,7 @@
                     </div>
                     <button type="button" class="button" onclick="storeOperator('*')">*</button>
                     <button type="button" class="button" onclick="inverse()">1/x</button>
+                    </br>
                 </div>
             </p>
             <p>
@@ -50,6 +45,7 @@
                     </div>
                     <button type="button" class="button" class="button" onclick="storeOperator('-')">-</button>
                     <button type="button" class="button" onclick="square()">x<sup>2</sup></button>
+                    </br>
                 </div>
             </p>
             <p>
@@ -61,11 +57,11 @@
                     </div>
                     <button type="button" class="button" onclick="storeOperator('+')">+</button>
                     <button type="button" class="button" onclick="percentage()">%</button>
+                    </br>
             </p>
             <p>
                 <div class="btn-group">
                     <button type="button" class="button" onclick="addDecimal()">.</button>
-                    <button type="button" class="button" onclick="addDigit('0')">0</button>
                     <button type="button" class="button" onclick="calculate()">=</button>
                 </div>
                 <button type="button" class="button" onclick="storeOperator('/')">/</button>
