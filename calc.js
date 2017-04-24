@@ -7,6 +7,14 @@
 var currentInput = "0";
 var memory = "0";
 var operator = 0;
+var I = 1;
+var V = 5;
+var L = 50;
+var X = 10;
+var C = 100;
+var D = 500;
+var M = 1000;
+
 // Helper function for displaying the current input
 function inputlimit() {
     if (inputlength > 11) {
