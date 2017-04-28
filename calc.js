@@ -15,6 +15,7 @@ var C = 100;
 var D = 500;
 var M = 1000;
 
+
 // Helper function for displaying the current input
 function inputlimit() {
     if (inputlength > 11) {
