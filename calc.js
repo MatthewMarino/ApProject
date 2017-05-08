@@ -15,29 +15,6 @@ var C = 100;
 var D = 500;
 var M = 1000;
 
-
-//figure this out
-/*
-function convertToRoman(num) {
-
-  var decimal = [ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 ];
-  var romanNumeral = [ 'M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I' ];
-
-  var done = '';
-
-  for (var i = 0; i < decimal.length; i++) {
-    while (decimal[i] <= num) {
-      done += romanNumeral[i];
-      num -= decimal[i];
-    }
-  }
-
-  return done;
-}
-*/
-
-
-
 // Helper function for displaying the current input
 function inputlimit() {
     if (inputlength > 11) {
@@ -103,6 +80,7 @@ function storeOperator(op) {
     }; // exponents
     memory = currentInput; //store value
     currentInput = "0";
+    currentInput = convertToRoman(currentInput);
     displayCurrentInput();
 }
 // Calculate using operator, the memory and what is current
@@ -128,21 +106,25 @@ function calculate() {
     };
     operator = 0; //clear operator
     memory = "0"; //clear memory
+    currentInput = convertToRoman(currentInput);
     displayCurrentInput();
 }
 // Change the sign of the current input
 function changeSign() {
     currentInput = currentInput - 1
+    currentInput = convertToRoman(currentInput);
     displayCurrentInput();
 }
 // Clear the current input back to 0
 function clearcurrent() {
     currentInput = "0";
+    currentInput = convertToRoman(currentInput);
     displayCurrentInput();
 }
 // Change the current input to a percentage
 function percentage() {
     currentInput = currentInput / 100
+    currentInput = convertToRoman(currentInput);
     displayCurrentInput();
 }
 // Calculate the factorial of the current input
@@ -150,20 +132,42 @@ function factorial(num) {
     for (var i = currentInput - 1; i >= 1; i--) {
         currentInput *= i;
     }
+    currentInput = convertToRoman(currentInput);
     displayCurrentInput();
 }
 // Calculate the square of the current input
 function square() {
     currentInput = currentInput * currentInput
+    currentInput = convertToRoman(currentInput);
     displayCurrentInput();
 }
 // Calculate the square root of the current input
 function squareRoot() {
     currentInput = Math.sqrt(currentInput);
+    currentInput = convertToRoman(currentInput);
     displayCurrentInput();
 }
 // Calculate the inverse of the current input
 function inverse() {
     currentInput = 1 / currentInput
+    currentInput = convertToRoman(currentInput);
     displayCurrentInput();
+}
+
+function convertToRoman() {
+
+  var decimal = [ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 ];
+  var romanNumeral = [ 'M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I' ];
+
+  var done = '';
+
+  for (var i = 0; i < decimal.length; i++) {
+    while (decimal[i] <= currentInput) {
+      done += romanNumeral[i];
+      currentInput -= decimal[i];
+    }
+  }
+
+  return done;
+
 }
